@@ -1,0 +1,11 @@
+.header-img {
+    width: 100vw;
+    height: 350px;
+    clip-path: polygon(0 0%, 100% 0, 100% 80%, 0 65%);
+}
+
+.clip-header {
+    background: purple;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    padding: 10rem 20%;
+}
