@@ -1,0 +1,28 @@
+.header-img {
+    width: 100%;
+    height: 275px;
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 65%);
+    position: relative;
+    z-index: 1;
+}
+
+.clip-header {
+    height: 120px;
+    background: pink;
+    /* clip-path: polygon(0% 0%,0% 100%, 100% 100%, 0 80%); */
+    clip-path: polygon(0% 0, 100% 100%, 0% 100%, 0 0%);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.clip-header-2 {
+    height: 50px;
+    background: purple;
+    clip-path: polygon(0% 0%,100% 100%, 0% 100%, 0 60%);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+}

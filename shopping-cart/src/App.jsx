@@ -1,20 +1,28 @@
-import { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import Header from './components/header/Header'
-import Footer from './components/footer/footer'
-import Body from './components/body/Body'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import { NavMenu } from "./components/navbar/Navbar";
+import { Home } from "./pages/Home";
+import { Shop } from "./pages/Shop";
+import { Footer } from "./components/Footer";
+import { ShopContextProvider } from "./context/ShopContext";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <Header/>
-      <Body/>
-      <Footer/>
-    </>
-  )
+	return (
+			<Container>
+				<ShopContextProvider>
+				<Router>
+					<NavMenu />
+					<Container className="mb-4">
+						<Routes>
+							<Route path="/" element={<Home />} />
+							<Route path="/cart" element={<Shop />} />
+						</Routes>
+					</Container>
+				</Router>
+				</ShopContextProvider>
+				<Footer />
+			</Container>
+	);
 }
 
-export default App
+export default App;

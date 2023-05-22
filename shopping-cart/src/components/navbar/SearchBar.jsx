@@ -1,9 +1,9 @@
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Navbar from 'react-bootstrap/Navbar';
+import { Button, Container, Form, Navbar } from "react-bootstrap";
+// import Container from "react-bootstrap/Container";
+// import Form from "react-bootstrap/Form";
+// import Navbar from 'react-bootstrap/Navbar';
 
-const SearchBar = () => {
+export const SearchBar = () => {
 	return (
 		<div>
 			<Navbar sticky="top" expand="lg">
@@ -23,4 +23,4 @@ const SearchBar = () => {
 	);
 };
 
-export default SearchBar;
+// export default SearchBar;

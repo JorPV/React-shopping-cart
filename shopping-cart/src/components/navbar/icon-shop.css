@@ -1,0 +1,14 @@
+.btn-shop {
+    border-radius: 0% 0% 0% 30%;
+    height: 3rem;
+}
+
+.rounded-circle {
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    transform: translate(-75%, 0%);
+}

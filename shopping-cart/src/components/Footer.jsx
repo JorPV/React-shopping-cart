@@ -1,13 +1,8 @@
-import React from "react";
-import "./footer.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Nav from "react-bootstrap/Nav";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 
-const Footer = () => {
+export const Footer = () => {
 	return (
-		<Container className="mt-5 mb-5">
+		<Container className="mt-5 py-5 bg-white shadow-sm">
 			<Row>
 				<Col xs={3} md={3}>
 					LO/go
@@ -70,4 +65,4 @@ const Footer = () => {
 	);
 };
 
-export default Footer;
+// export default Footer;
