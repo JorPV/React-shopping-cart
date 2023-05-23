@@ -1,0 +1,32 @@
+.card{
+    border-radius: 0px 0px 20px 0px !important;
+    padding-right: 0;
+}
+.card-body {
+    padding-right: 0 !important;
+}
+
+.card > img {
+    width: 100% !important;
+    border-radius: 0px;
+}
+
+.product-price {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 175px;
+    left:10px;
+    color: #474747;
+}
+
+.card-btn {
+    border-radius: 15px 0px 20px 0px !important;
+}
+
+.special {
+    background-color:#d4c500;
+    position: absolute;
+    top: -10px;
+    left: 185px;
+    border-radius: 5px;
+}

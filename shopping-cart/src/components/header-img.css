@@ -1,3 +1,16 @@
+.header {
+    position: relative;
+}
+
+.header-text {
+    position: absolute;
+    color:#fff;
+    top: 80px;
+    left: 275px; 
+    width: 100%;
+    z-index: 4;
+}
+
 .header-img {
     width: 100%;
     height: 275px;
@@ -8,10 +21,11 @@
 
 .clip-header {
     height: 120px;
-    background: pink;
+    background: greenyellow;
+    opacity: 0.33;
     /* clip-path: polygon(0% 0%,0% 100%, 100% 100%, 0 80%); */
     clip-path: polygon(0% 0, 100% 100%, 0% 100%, 0 0%);
-    position: relative;
+    position: absolute;
     padding: 0;
     margin: 0;
     z-index: 2;
@@ -20,6 +34,7 @@
 .clip-header-2 {
     height: 50px;
     background: purple;
+    opacity: 0.8;
     clip-path: polygon(0% 0%,100% 100%, 0% 100%, 0 60%);
     position: relative;
     padding: 0;

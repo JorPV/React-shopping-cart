@@ -5,10 +5,12 @@ import { Home } from "./pages/Home";
 import { Shop } from "./pages/Shop";
 import { Footer } from "./components/Footer";
 import { ShopContextProvider } from "./context/ShopContext";
+import { SearchContextProvider } from "./context/SearchContext";
 
 function App() {
 	return (
 			<Container>
+				<SearchContextProvider>
 				<ShopContextProvider>
 				<Router>
 					<NavMenu />
@@ -20,6 +22,7 @@ function App() {
 					</Container>
 				</Router>
 				</ShopContextProvider>
+				</SearchContextProvider>
 				<Footer />
 			</Container>
 	);

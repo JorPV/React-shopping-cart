@@ -1,20 +1,20 @@
-import { Container, Nav, Navbar as NavbarBs} from "react-bootstrap";
+import { Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { SearchBar } from "./SearchBar";
-import { IconShop } from "./IconShop";
-import	{ HeaderImg } from "../HeaderImg";
+import { ShoppingCart } from "./ShoppingCart";
+import { HeaderImg } from "../HeaderImg";
 import { NavLink } from "react-router-dom";
 
 export const NavMenu = () => {
 	return (
 		<>
 			<div>
-				<div className="d-flex justify-content-end bg-white shadow-sm">
+				<div className="sticky-top d-flex justify-content-end bg-white shadow-sm">
 					<SearchBar />
-					<IconShop />
+					<ShoppingCart />
 				</div>
-				<NavbarBs sticky="top" expand="lg">
+				<NavbarBs expand="lg">
 					<Container fluid>
-						<NavbarBs.Brand href="/">LO/Go</NavbarBs.Brand>
+						<NavbarBs.Brand href="/"><h1>LO/Go</h1></NavbarBs.Brand>
 						<NavbarBs.Toggle aria-controls="navbarScroll" />
 						<NavbarBs.Collapse id="navbarScroll">
 							<Nav
@@ -22,8 +22,21 @@ export const NavMenu = () => {
 								style={{ maxHeight: "100px" }}
 								navbarScroll
 							>
-								<Nav.Link to="/" as={NavLink}>Home</Nav.Link>	 
-						<Nav.Link to="/cart" as={NavLink}>Shop</Nav.Link>
+								<Nav.Link to="/" as={NavLink}>
+									Home
+								</Nav.Link>
+								<Nav.Link to="/empty" as={NavLink}>
+									Menu item
+								</Nav.Link>
+								<Nav.Link to="/empty" as={NavLink}>
+									Menu item
+								</Nav.Link>
+								<Nav.Link to="/empty" as={NavLink}>
+									Menu item
+								</Nav.Link>
+								<Nav.Link to="/cart" as={NavLink}>
+									Shop
+								</Nav.Link>
 							</Nav>
 						</NavbarBs.Collapse>
 					</Container>
@@ -34,4 +47,4 @@ export const NavMenu = () => {
 	);
 };
 
-// export default NavMenu;
+

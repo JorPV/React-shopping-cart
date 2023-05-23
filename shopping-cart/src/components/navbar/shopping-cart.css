@@ -1,6 +1,7 @@
 .btn-shop {
-    border-radius: 0% 0% 0% 30%;
-    height: 3rem;
+    border-radius: 0px 0px 0px 15px !important;
+    height: auto;
+    width: 6rem;
 }
 
 .rounded-circle {

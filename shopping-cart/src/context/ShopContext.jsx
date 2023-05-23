@@ -22,9 +22,24 @@ export const ShopContextProvider = (props) => {
 		setCartProducts((prev) => ({ ...prev, [id]: prev[id] - 1 }));
 	};
 
-	const contextValue = { cartProducts, addToCart, removeFromCart };
+	// Get the number of items added to the cart
+	const getProductsCart = (id) => {
+		if (Object.keys(cartProducts).length === 0) {
+			return 0;
+		}
+		return Object.values(cartProducts).reduce(
+			(total, count) => total + count,
+			0
+		);
+	};
 
-    console.log(cartProducts);
+	const contextValue = {
+		cartProducts,
+		addToCart,
+		removeFromCart,
+		getProductsCart,
+	};
+
 	return (
 		<ShopContext.Provider value={contextValue}>
 			{props.children}
