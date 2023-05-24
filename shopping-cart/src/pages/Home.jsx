@@ -1,5 +1,5 @@
 import React from "react";
-import { CardsLayout } from "./body/CardsLayout";
+import { CardsLayout } from "./home/CardsLayout";
 
 export const Home = () => {
 	return (
@@ -20,9 +20,6 @@ export const Home = () => {
 				blandit turpis cursus in.
 			</p>
 			<CardsLayout />
-			<div>
-				
-			</div>
 		</>
 	);
 };

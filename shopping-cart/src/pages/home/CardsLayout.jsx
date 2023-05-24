@@ -1,7 +1,6 @@
 import { Row, Container } from "react-bootstrap";
 import { ProductCard } from "./ProductCard";
 
-
 export const CardsLayout = () => {
 	return (
 		<Container fluid className="container-cards w-100">
@@ -10,4 +9,4 @@ export const CardsLayout = () => {
 			</Row>
 		</Container>
 	);
-}
+};

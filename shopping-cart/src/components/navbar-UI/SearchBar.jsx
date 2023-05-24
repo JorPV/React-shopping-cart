@@ -5,10 +5,10 @@ import { useContext } from "react";
 export const SearchBar = () => {
 	const { searchFn } = useContext(SearchContext);
 
-	const handleChange = event => {
-		const searchInput = event.target.value; 
+	const handleChange = (event) => {
+		const searchInput = event.target.value;
 		searchFn(searchInput);
-	}
+	};
 
 	return (
 		<div>
@@ -28,4 +28,4 @@ export const SearchBar = () => {
 			</Navbar>
 		</div>
 	);
-}
+};

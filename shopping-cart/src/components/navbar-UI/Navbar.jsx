@@ -14,7 +14,9 @@ export const NavMenu = () => {
 				</div>
 				<NavbarBs expand="lg">
 					<Container fluid>
-						<NavbarBs.Brand href="/"><h1>LO/Go</h1></NavbarBs.Brand>
+						<NavbarBs.Brand href="/">
+							<h1>LO/Go</h1>
+						</NavbarBs.Brand>
 						<NavbarBs.Toggle aria-controls="navbarScroll" />
 						<NavbarBs.Collapse id="navbarScroll">
 							<Nav
@@ -46,5 +48,3 @@ export const NavMenu = () => {
 		</>
 	);
 };
-
-

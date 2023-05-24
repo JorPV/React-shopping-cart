@@ -9,22 +9,22 @@ import { SearchContextProvider } from "./context/SearchContext";
 
 function App() {
 	return (
-			<Container>
-				<SearchContextProvider>
+		<Container>
+			<SearchContextProvider>
 				<ShopContextProvider>
-				<Router>
-					<NavMenu />
-					<Container className="mb-4">
-						<Routes>
-							<Route path="/" element={<Home />} />
-							<Route path="/cart" element={<Shop />} />
-						</Routes>
-					</Container>
-				</Router>
+					<Router>
+						<NavMenu />
+						<Container className="mb-4">
+							<Routes>
+								<Route path="/" element={<Home />} />
+								<Route path="/cart" element={<Shop />} />
+							</Routes>
+						</Container>
+					</Router>
 				</ShopContextProvider>
-				</SearchContextProvider>
-				<Footer />
-			</Container>
+			</SearchContextProvider>
+			<Footer />
+		</Container>
 	);
 }
 

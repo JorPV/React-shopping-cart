@@ -11,7 +11,9 @@ export const Product = (props) => {
 	return (
 		<>
 			<Card style={{ width: "18rem" }} className="card m-0 p-0">
-				<div className="special px-3 align-items-center">{special && <p className="text-uppercase fw-medium">Special</p>}</div>
+				<div className="special px-3 align-items-center">
+					{special && <p className="text-uppercase fw-medium">Special</p>}
+				</div>
 				<Card.Img
 					variant="top"
 					src="https://source.unsplash.com/chyPcrDjcZg/100px180"

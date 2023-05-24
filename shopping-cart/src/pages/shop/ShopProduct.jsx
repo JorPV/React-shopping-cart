@@ -3,7 +3,6 @@ import { CartProduct } from "./CartProduct";
 import { ShopContext } from "../../context/ShopContext";
 import { useContext } from "react";
 
-
 export const CartItems = () => {
 	const { cartProducts } = useContext(ShopContext);
 
@@ -11,9 +10,7 @@ export const CartItems = () => {
 		<>
 			{products.map((product) => {
 				if (cartProducts[product.id] !== 0) {
-					return (
-						<CartProduct data={product}/>
-					);
+					return <CartProduct data={product} />;
 				}
 			})}
 		</>

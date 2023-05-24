@@ -3,7 +3,7 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 export const Footer = () => {
 	return (
 		<>
-			<div className="clip-header-2"></div>
+			<div className="clip-header"></div>
 			<Container className="mt-0 py-5 bg-white shadow-sm">
 				<Row>
 					<Col xs={3} md={4}>
