@@ -8,7 +8,7 @@ export const HeaderImg = () => {
 				<div className="header-text">
 					<h1>Er is ruimte</h1>
 					<p>
-						<i>voor een quote</i>
+						<i>voor een plant</i>
 					</p>
 				</div>
 				<Image

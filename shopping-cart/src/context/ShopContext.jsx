@@ -3,6 +3,7 @@ import products from "../../../public/products.json";
 
 export const ShopContext = createContext(null);
 
+// Set default to 0
 const getDefault = () => {
 	let cart = {};
 	for (let i = 1; i < products.length + 1; i++) {
@@ -14,10 +15,12 @@ const getDefault = () => {
 export const ShopContextProvider = (props) => {
 	const [cartProducts, setCartProducts] = useState(getDefault());
 
+	// Add the number of products by 1
 	const addToCart = (id) => {
 		setCartProducts((prev) => ({ ...prev, [id]: prev[id] + 1 }));
 	};
 
+	// Remove the number of products by 1
 	const removeFromCart = (id) => {
 		setCartProducts((prev) => ({ ...prev, [id]: prev[id] - 1 }));
 	};
