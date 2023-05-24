@@ -29,3 +29,15 @@
     margin: 0;
     z-index: 2;
 }
+
+/* .clip-header-2 {
+    height: 120px;
+    background: greenyellow;
+    opacity: 0.33;
+    clip-path: polygon(0% 0%,0% 100%, 100% 100%, 0 80%);
+    clip-path: polygon(0% 0, 100% 100%, 0% 100%, 0 0%);
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+} */

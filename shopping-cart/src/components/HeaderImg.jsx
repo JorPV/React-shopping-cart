@@ -16,6 +16,7 @@ export const HeaderImg = () => {
 					alt="Plant leaves"
 					className="header-img"
 				/>
+				{/* <div className="clip-header-2"></div> */}
 				<div className="clip-header mb-5"></div>
 			</div>
 		</div>
